@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+</head>
+<body>
+    <label for = "LanguageInput"> What language was created to add Interactivity to the Web? : 
+        <input class=" Language" type=" text">
+        <button type="Submit">Submit</button>
+    </label>
+    <script>
+        alert(document.querySelector('.Language'));
+        var txtLanguage = (document.querySelector('.Language'));
+
+        txtLanguage.addEventListener('focusout', 
+                (event) => {alert(txtLanguage.value)});
+        
+
+        var Library = prompt('What code library do you prefer? Choose between Vue, React, or jQuery.');
+        alert('You chose: ' + Library);
+  
+
+    </script>
+    
+</body>
+</html>
